@@ -1,0 +1,198 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #34495e;
+    color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Wrapper for main content */
+.wrapper {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Header and navigation styling */
+.site-header {
+    background: transparent;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Navigation bar layout */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Brand logo */
+.brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1abc9c;
+}
+
+/* Menu styling */
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Individual menu item styling */
+.menu li {
+    margin-left: 15px;
+}
+
+/* Menu link appearance */
+.menu li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for menu links */
+.menu li a:hover {
+    color: #1abc9c;
+}
+
+/* Main content section */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+/* Text content in intro section */
+.text-content {
+    max-width: 50%;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    color: #1abc9c;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    color: #bdc3c7;
+}
+
+/* Registration form */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Form input fields */
+.register-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 85%;
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ecf0f1;
+}
+
+/* Placeholder color for input fields */
+.register-form input::placeholder {
+    color: #bdc3c7;
+}
+
+/* Submit button for the form */
+.register-btn {
+    background: linear-gradient(90deg, rgba(39, 174, 96, 1) 0%, rgba(22, 160, 133, 1) 100%);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect for the button */
+.register-btn:hover {
+    background: linear-gradient(90deg, rgba(22, 160, 133, 1) 0%, rgba(39, 174, 96, 1) 100%);
+}
+
+/* Login text styling */
+.login-text {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #bdc3c7;
+}
+
+/* Login link styling */
+.login-link {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover effect for login link */
+.login-link:hover {
+    text-decoration: underline;
+}
+
+/* Intro image styling */
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer styling */
+.site-footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+}
+
+.site-footer p {
+    margin: 0;
+    color: #bdc3c7;
+}
+
+.site-footer a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .text-content, .intro-image {
+        max-width: 100%;
+    }
+}
